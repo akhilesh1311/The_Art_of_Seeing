@@ -1,0 +1,132 @@
+{%extends "base.html"%}
+{% import "bootstrap/wtf.html" as wtf%}
+
+{#<!--{% block title%}Art of Seeing{%endblock%}-->#}
+{%block head%}
+{{super()}}
+<link rel="stylesheet" href="{{ url_for('static', filename='webtest.css') }}"/>
+{%endblock%}
+
+
+{%block page_container%}
+<div class="page-header">
+    <div id="uploadbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+        <div class="panel-group">
+            <div class="panel panel-default" style="border-color:lightcoral">
+                <div class="panel-heading" style="background-color:#fff8f8;border-color:lightcoral">
+                    <h4 class="panel-title" style="color:lightcoral">
+                        <a data-toggle="collapse" href="#collapse1">Upload Image</a>
+                    </h4>
+                </div>
+                <div id="collapse1" class="panel-collapse collapse">
+                    <div class="panel-body" style="border-color:lightcoral">{{wtf.quick_form(form)}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </br>
+    <div class="mainbox col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0">
+        <h4 style="font-weight:normal;text-align:center">Click on the supperpositon images. Scan with cell phone.</h4>
+    </div>
+</div>
+<div class="wrapper_g" style="padding-left:15%">
+    {%if set_path|length ==4 %}
+        <div class="gallery">
+            <a target="_blank" href={{set_path[0]}}>
+                <img src={{set_path[0]}} width="500" height="500">
+            </a>
+            <div class="desc">Target Image</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href={{set_path[1]}}>
+                <img src={{set_path[1]}} width="500" height="500">
+            </a>
+            <div class="desc">Grating Image1</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href={{set_path[2]}}>
+                <img src={{set_path[2]}} width="500" height="500">
+            </a>
+            <div class="desc">Grating Image2</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href={{set_path[3]}}>
+                <img src={{set_path[3]}} width="500" height="500">
+            </a>
+            <div class="desc">Superposition Image</div>
+        </div>
+    {%endif%}
+    {%if set_path|length ==5 %}
+        <div class="gallery">
+            <a target="_blank" href={{set_path[0]}}>
+                <img src={{set_path[0]}} width="500" height="500">
+            </a>
+        <div class="desc">Target Image</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href={{set_path[1]}}>
+                <img src={{set_path[1]}} width="500" height="500">
+            </a>
+        <div class="desc">Grating Image1</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href={{set_path[2]}}>
+                <img src={{set_path[2]}} width="500" height="500">
+            </a>
+        <div class="desc">Grating Image2</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href={{set_path[3]}}>
+                <img src={{set_path[3]}} width="500" height="500">
+            </a>
+        <div class="desc">Superposition Image</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href={{set_path[4]}}>
+                <img src={{set_path[4]}} width="500" height="500">
+            </a>
+        <div class="desc">Superposition Image2</div>
+        </div>
+    {%endif%}
+    {%if set_path|length==6%}
+        <div class="gallery">
+            <a target="_blank" href={{set_path[0]}}>
+                <img src={{set_path[0]}} width="500" height="500">
+            </a>
+        <div class="desc">Target Image1</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href={{set_path[1]}}>
+                <img src={{set_path[1]}} width="500" height="500">
+            </a>
+        <div class="desc">Target Image2</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href={{set_path[2]}}>
+                <img src={{set_path[2]}} width="500" height="500">
+            </a>
+        <div class="desc">Grating Image1</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href={{set_path[3]}}>
+                <img src={{set_path[3]}} width="500" height="500">
+            </a>
+        <div class="desc">Grating Image2</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href={{set_path[4]}}>
+                <img src={{set_path[4]}} width="500" height="500">
+            </a>
+        <div class="desc">Superposition Image1</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href={{set_path[5]}}>
+                <img src={{set_path[5]}} width="500" height="500">
+            </a>
+        <div class="desc">Superposition Image2</div>
+        </div>
+    {%endif%}
+</div>
+{%endblock%}

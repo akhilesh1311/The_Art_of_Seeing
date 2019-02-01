@@ -1,0 +1,66 @@
+{%extends "base.html"%}
+{% import "bootstrap/wtf.html" as wtf%}
+
+{#<!--{% block title%}Art of Seeing{%endblock%}-->#}
+{%block head%}
+{{super()}}
+<link rel="stylesheet" href="{{ url_for('static', filename='webtest.css') }}"/>
+{%endblock%}
+
+{%block page_container%}
+<div class="page-header">
+    <h2 style="text-align: center">Moiré Art</h2>
+    <h4 style="font-weight:normal;text-align: center">We offer three type of encryption using moiré effect. Upload images to see what you can get!</h4>
+    {#<div class="col-md-6" style="background:none">
+        <div class="col-md-4">
+            {{wtf.quick_form(form)}}
+        </div>
+    </div> 
+    <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
+        <div class="panel panel-info" style="border-color:lightcoral">
+            <div class="panel-heading" style="background-color:#fff8f8;border-color:lightcoral">
+                <div class="panel-title" style="color:rgb(141, 138, 138)">Upload images</div>
+            </div>     
+            <div style="padding-top:30px" class="panel-body">
+                <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>    
+                {{wtf.quick_form(form)}}
+            </div>                     
+        </div>  
+    </div> #}
+    <div id="uploadbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+        <div class="panel-group">
+            <div class="panel panel-default" style="border-color:lightcoral">
+                <div class="panel-heading" style="background-color:#fff8f8;border-color:lightcoral">
+                    <h4 class="panel-title" style="color:lightcoral">
+                        <a data-toggle="collapse" href="#collapse1">Upload Image</a>
+                    </h4>
+                </div>
+                <div id="collapse1" class="panel-collapse collapse">
+                    <div class="panel-body" style="border-color:lightcoral">{{wtf.quick_form(form)}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </br>
+    <div style="display:inline-table">
+        <div class="gallery" style="width:340px">
+                <a target="_blank" href="{{url_for('static', filename='moire1.png')}}">
+                    <img src="{{url_for('static', filename='moire1.png')}}" width="200" height="250">
+                </a>
+            <div class="desc">Simple Moiré Encrption: </br>Encrypt a single image with two gratings. And the superposition of the gratings reveals the original image.</div>
+        </div>
+        <div class="gallery" style="width:340px">
+                <a target="_blank" href="{{url_for('static', filename='moire3.png')}}">
+                    <img src="{{url_for('static', filename='moire3.png')}}" width="200" height="250">
+                </a>
+            <div class="desc">Complex Moiré Encrption: </br>Encrypt a single image with two identical gratings. And the superposition of the gratings reveals the original image.</div>
+        </div>
+        <div class="gallery" style="width:340px">
+                <a target="_blank" href="{{url_for('static', filename='moire6.png')}}">
+                    <img src="{{url_for('static', filename='moire6.png')}}" width="200" height="250">
+                </a>
+            <div class="desc">Moiré Art: Encrypt two images with two gratings. And the superposition of the gratings reveals the original images respectively at diffenerent alignment.</div>
+        </div>
+    </div>
+</div>
+{%endblock%}

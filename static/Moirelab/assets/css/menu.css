@@ -1,0 +1,162 @@
+@import url('http://fonts.googleapis.com/css?family=Tangerine:400,700');
+
+body {
+    background: url(http://d3ui957tjb5bqd.cloudfront.net/images/screenshots/products/29/293/293347/largewatercolorbackground-blush-o.jpg?1420755418)/* url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAKElEQVQIW2NkQAOZxU3GjMhiIIHpvXVn4YIwAZAisCCyAFgQXQAkCAAiqRGXMgseLwAAAABJRU5ErkJggg==)*/;     
+    color: #111;
+}
+
+h1, h2, h3, h4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 2.5em;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+section .container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+a {
+  color: #a11;
+}
+
+a:hover {
+  color: #d11;
+  text-decoration: none;
+}
+
+/* Custom menu */
+.menu-wrap {
+    background-color: #FFF8F8;
+    position: fixed;
+    top: 0;
+    right:0;
+    height: 100%;
+    width: 300px;
+    margin-right: -300px;
+    font-size: 1em;
+    font-weight: 700;
+    overflow: auto;
+    z-index: 10;
+}
+
+.menu-sidebar {
+    margin: 75px 0 80px 10px;
+    position: relative;
+    top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+    font-size: 1.2em;
+}
+
+.menu-sidebar ul {
+    padding-left: 0;
+}
+
+.menu-sidebar li {
+    list-style: none;
+    padding: 18px 40px 0;
+}
+
+.menu-sidebar li.menu-center {
+    list-style: none;
+    padding: 28px 80px 0;
+}
+
+.menu-sidebar li > a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    color: #666;
+    font-size: 1.2em;
+    position: relative;
+    text-decoration: none;
+}
+.menu-sidebar li > a::after {
+    content: "";
+    display: block;
+    height: 0.1em;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    background-image: linear-gradient(to right, transparent 50.3%, #666 50.3%);
+    transition: background-position .1s .05s ease-out;
+    background-size: 200% auto;
+}
+.menu-sidebar li > a:hover::after {
+    background-position: -100% 0;
+}
+
+.menu-sidebar li a #logo {
+    width: 50px;
+}
+
+/*Custom hamburger button*/
+.toggle-button {
+    position: fixed;
+    width: 32px;
+    height: 32px;
+    top: 12px;
+    right: 20px;
+    z-index: 9999;
+}
+.toggle-button:hover {
+    cursor: pointer;
+}
+
+.toggle-button .menu-bar {
+    position: absolute;
+    width: 100%
+}
+
+.toggle-button .menu-bar-top {
+    border: 4px solid #f5e0e0;
+    border-bottom: none;
+    top: 0;
+}
+.toggle-button .menu-bar-middle {
+    height: 4px;
+    background-color: #f5e0e0;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    top: 4px;
+}
+.toggle-button .menu-bar-bottom {
+    border: 4px solid #f5e0e0;
+    border-top: none;
+    top: 22px;
+}
+
+/* for videos */
+.video-container {
+    position:relative;
+    padding-bottom:56.25%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}

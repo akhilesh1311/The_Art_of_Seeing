@@ -1,0 +1,71 @@
+{%extends "bootstrap/base.html"%}
+
+{%block script%}
+{{super()}}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+{%endblock script%}
+
+{%block title%} Art of Seeing {%endblock%}
+
+{%block head%}
+{{super()}}
+<link rel="shortcut icon" href="{{url_for('static',filename='favicon.ico')}}"
+    type="image/x-icon">
+<link rel="icon" href="{{url_for('static',filename='favicon.ico')}}"
+    type="image/x-icon">
+<link href="{{url_for('static',filename="icon.png")}}" rel="shortcut icon" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="{{url_for('static',filename="layout.css")}}" rel="stylesheet" type="text/css" />
+<link href="{{url_for('static',filename="menubar.css")}}" rel="stylesheet" type="text/css" />
+{%endblock%}
+
+{%block styles%}
+{{super()}}
+<link href="{{url_for('static',filename="layout.css")}}" rel="stylesheet" type="text/css" />
+<link href="{{url_for('static',filename="menubar.css")}}" rel="stylesheet" type="text/css" />
+{%endblock%}
+
+
+{%block navbar%}
+{#
+<div class="navbar navber-inverse" role="navigation" style="background:#E2693E;height:40px;">
+    <div class="container" style="left:0px">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle"
+            date-togle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" style="font-size:20px;color:#FFF;margin-top:0px;margin-left:80px;text-align:center;line-height:20px;display:inline-block;" href="/upload">Art of Seeing</a>
+        </div>
+        <div class="navbar-collapse collapse" style="width:1268px;height:25px;position: absolute;left:0px;border-left:50px solid #fff8f8;margin-left:0px;background:#fff8f8;margin-top:50px;padding-top:0px;">
+            <ul class="nav navbar-nav">
+                <li><a style="color:gray;padding:5px 20px 5px 20px;line-height: normal;" href="http://172.31.144.100/pemotion">Poemotion</a></li>
+                <li><a style="color:gray;padding:5px 20px 5px 20px;line-height: normal;" href="/static/Moirelab/moire1.html">Moiré Pattern</a></li>
+                <li><a style="color:gray;padding:5px 20px 5px 20px;line-height: normal;" href="/upload">Moiré Art</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+#}
+<div id="header" style="background:#E2693E;height:72px;">
+    <div style="height:30px;margin:auto;">
+        <label style="font-size:20px;color:#FFF;margin-left:100px;text-align:center;line-height:40px;display:inline-block;">Art of seeing</label>
+    </div>
+    <div style="height:30px;margin:auto;background:#fff8f8;margin-top:15px;padding-top: 0px;">
+        <label class="menu2" style="font-size:17px;font-weight:normal;margin-left:100px;padding:5px 20px 5px 20px;line-height: normal;"><a href="{{url_for('static',filename='Moirelab/moire1.html')}}">Moiré Patterns</a></label>
+        <label class="menu2" style="font-size:17px;font-weight:normal;padding:5px 20px 5px 20px;line-height: normal;"><a href="#">Poemotion</a></label>
+        <label class="menu2" style="font-size:17px;font-weight:normal;background:#ffd8783d;padding:5px 20px 5px 20px;line-height: normal;"><a href="{{url_for('index')}}">Moiré Art</a></label>
+    </div>
+</div>
+{%endblock%}
+
+{% block content %}
+<div class="container">
+    {%block page_container%}
+    {%endblock%}
+</div>
+{% endblock %}
