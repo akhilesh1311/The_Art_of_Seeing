@@ -1,6 +1,6 @@
 # Project Title
 
-One Paragraph of project description goes here
+This webpage displays the Moire book, implements the Moire image encryption algorithm and shows how the Moire effect works.
 
 ## Getting Started
 
@@ -8,53 +8,39 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+For installing Flask and it's subsidary packages, run the following command
 
 ```
-Give examples
+pip install -r requirements.txt
 ```
+## Running the Application
 
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
+Just run the moire.py file as:
 ```
-Give the example
+python moire.py
 ```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
+Open 0.0.0.0:5005/base on any web browser.
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+The Application has 3 main parts
+
+####* Moire Patterns:
+
+We have 5 patterns:
+*Circles
+*Spikes
+*Dots
+*Square
+*Triangles
+
+Screenshot of a few of the patterns:
+![Alt text](Moire_circle.png?raw=true "Moire Circles")
+![Alt text](moire_spikes.png?raw=true "Moire Spikes")
+
+Working animations of these are also uploaded on youtube:
+*[Moire Circles](https://youtu.be/TCJ3FupaYtE)
+*[Moire Spikes](https://youtu.be/LIvYlEHI6Kk)
 
 ## Built With
 
