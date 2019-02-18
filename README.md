@@ -1,4 +1,4 @@
-# Project Title
+# The Art of Seeing
 
 This webpage displays the Moire book, implements the Moire image encryption algorithm and shows how the Moire effect works.
 
@@ -19,28 +19,28 @@ Just run the moire.py file as:
 ```
 python moire.py
 ```
-Open 0.0.0.0:5005/base on any web browser.
+Open ```0.0.0.0:5005/base``` on any web browser.\
 
 ## Deployment
 
 The Application has 3 main parts
 
-####* Moire Patterns:
+### Moire Patterns:
 
-We have 5 patterns:
-*Circles
-*Spikes
-*Dots
-*Square
-*Triangles
+We have 5 patterns:\
+*Circles\
+*Spikes\
+*Dots\
+*Square\
+*Triangles\
 
-Screenshot of a few of the patterns:
-![Alt text](Moire_circle.png?raw=true "Moire Circles")
-![Alt text](moire_spikes.png?raw=true "Moire Spikes")
+Screenshot of a few of the patterns:\
+![Alt text](Moire_circle.png?raw=true "Moire Circles")\
+![Alt text](moire_spikes.png?raw=true "Moire Spikes")\
 
-Working animations of these are also uploaded on youtube:
-*[Moire Circles](https://youtu.be/TCJ3FupaYtE)
-*[Moire Spikes](https://youtu.be/LIvYlEHI6Kk)
+Working animations of these are also uploaded on youtube:\
+*[Moire Circles](https://youtu.be/TCJ3FupaYtE)\
+*[Moire Spikes](https://youtu.be/LIvYlEHI6Kk)\
 
 ## Built With
 
