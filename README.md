@@ -19,7 +19,7 @@ Just run the moire.py file as:
 ```
 python moire.py
 ```
-Open ```0.0.0.0:5005/base``` on any web browser.\
+Open ```0.0.0.0:5005/base``` on any web browser.
 
 ## Deployment
 
@@ -32,42 +32,35 @@ We have 5 patterns:\
 *Spikes\
 *Dots\
 *Square\
-*Triangles\
+*Triangles
 
 Screenshot of a few of the patterns:\
 ![Alt text](Moire_circle.png?raw=true "Moire Circles")\
-![Alt text](moire_spikes.png?raw=true "Moire Spikes")\
+![Alt text](moire_spikes.png?raw=true "Moire Spikes")
 
 Working animations of these are also uploaded on youtube:\
 *[Moire Circles](https://youtu.be/TCJ3FupaYtE)\
-*[Moire Spikes](https://youtu.be/LIvYlEHI6Kk)\
+*[Moire Spikes](https://youtu.be/LIvYlEHI6Kk)
+
+### Moire Art:
+
+We have 3 different types of moire art:\
+*Simple Moire Encryption - Encrypt a single image with two gratings. And the superposition of the gratings reveals the original image.\
+*Complex Moire Encryption - Encrypt a single image with two identical gratings. And the superposition of the gratings reveals the original image.\
+*Moire Art - Encrypt two images with two gratings. And the superposition of the gratings reveals the original images respectively at diffenerent alignment.
+
+Screenshot of the page:\
+![Alt text](Moire_art.png?raw=true "Moire Art")
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+* [Flask](http://flask.pocoo.org/docs/1.0/) - The web framework used\
+* [Bootstrap](https://getbootstrap.com/docs/4.1/getting-started/introduction/) - UI Css used\
+* [Target-Driven Moire Pattern Synthesis by Phase Modulation](https://ieeexplore.ieee.org/document/6751348) - Used as reference for Moire Art
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* Takahiro Kurashima\
+* Yunong Liang\
+* Bo Xu\
+* James Abello
