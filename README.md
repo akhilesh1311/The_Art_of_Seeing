@@ -4,8 +4,6 @@ This webpage displays the Moire book, implements the Moire image encryption algo
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
 ### Prerequisites
 
 For installing Flask and it's subsidary packages, run the following command
@@ -54,13 +52,13 @@ Screenshot of the page:\
 
 ## Built With
 
-* [Flask](http://flask.pocoo.org/docs/1.0/) - The web framework used\
-* [Bootstrap](https://getbootstrap.com/docs/4.1/getting-started/introduction/) - UI Css used\
+* [Flask](http://flask.pocoo.org/docs/1.0/) - The web framework used
+* [Bootstrap](https://getbootstrap.com/docs/4.1/getting-started/introduction/) - UI Css used
 * [Target-Driven Moire Pattern Synthesis by Phase Modulation](https://ieeexplore.ieee.org/document/6751348) - Used as reference for Moire Art
 
 ## Acknowledgments
 
-* Takahiro Kurashima\
-* Yunong Liang\
-* Bo Xu\
+* Takahiro Kurashima
+* Yunong Liang
+* Bo Xu
 * James Abello
